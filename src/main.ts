@@ -1,7 +1,14 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { provideRouter } from '@angular/router';
+import { AppComponent } from './app/app.component';
+import { HelloWorldComponent } from './app/hello-world/hello-world.component';
+import { ProfileComponent } from './app/profile/profile.component';
 
-import { AppModule } from './app/app.module';
-
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideRouter([
+      { path: 'hello-world', component: HelloWorldComponent },
+      { path: 'profile', component: ProfileComponent },
+    ]),
+  ],
+}).catch((err) => console.error(err));

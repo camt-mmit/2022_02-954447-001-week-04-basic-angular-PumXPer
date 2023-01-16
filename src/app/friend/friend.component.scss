@@ -1,4 +1,38 @@
 table,tr,thead,th,td{
-  border: 1px solid black;
+  border: 1px solid rgb(156, 156, 156);
   border-collapse: collapse;
+  border-radius: 15px;
+}
+
+a{
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 40px;
+  padding: 5px;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #ff0000;
+  border: 1px solid rgb(200, 17, 17);
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0px 3px 0px;
+}
+
+table {
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  width: 80%;
+}
+
+div{
+  text-align: center;
 }

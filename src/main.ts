@@ -9,6 +9,7 @@ import { StatusComponent } from './app/status/status.component';
 bootstrapApplication(AppComponent, {
   providers: [
     provideRouter([
+      { path: '', redirectTo: 'hello-world', pathMatch: 'full' },
       { path: 'hello-world', component: HelloWorldComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'friend', component: FriendComponent },

@@ -1,0 +1,21 @@
+li.link {
+  display: inline;
+  margin: 0px 5px 0px;
+}
+
+a{
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 40px;
+  padding: 5px;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #ff0000;
+  border: 1px solid rgb(200, 17, 17);
+}
+
+ul.pad{
+  padding: 0;
+}

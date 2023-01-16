@@ -10,10 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class StatusComponent {
   title = 'Status';
+  date = new Date();
+  userAgent = navigator.userAgent;
   language = navigator.language;
   cookie = navigator.cookieEnabled;
-  userAgent = navigator.userAgent;
   logic = navigator.hardwareConcurrency;
   maxTouchPoints = navigator.maxTouchPoints;
-  date = new Date();
 }
